@@ -30,18 +30,18 @@ class Solution:
         index = length - n
 
         phead = ListNode(0, head)
+        
         for i in range(index):
             phead = phead.next
         phead.next = phead.next.next
-        
         return head
 
 if __name__  == '__main__':
     head = [1,2,3,4,5]
     n = 2
-    # head = [1]
-    # n = 1
-    # head = [1,2]
-    # n = 1
+    head = [1]
+    n = 1
+    head = [1,2]
+    n = 1
     rtn = Solution().removeNthFromEnd(head, n)
     print(rtn)

@@ -34,7 +34,7 @@ class Solution:
 if __name__  == '__main__':
     classes = [[1,2],[3,5],[2,2]]
     extraStudents = 2
-    # classes = [[2,4],[3,9],[4,5],[2,10]]
-    # extraStudents = 4
+    classes = [[2,4],[3,9],[4,5],[2,10]]
+    extraStudents = 4
     rtn = Solution().maxAverageRatio(classes, extraStudents)
     print(rtn)
