@@ -25,10 +25,8 @@ class Solution:
                         dis[x][y] = nd
                         heapq.heappush(h, (nd, x, y))
 
-
-
 if __name__  == '__main__':
     grid = [[0,1,3,2],[5,1,2,5],[4,3,8,6]]
-    # grid = [[0,2,4],[3,2,1],[1,0,4]]
+    grid = [[0,2,4],[3,2,1],[1,0,4]]
     rtn = Solution().minimumTime(grid)
     print(rtn)
