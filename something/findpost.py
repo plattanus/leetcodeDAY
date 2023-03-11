@@ -1,8 +1,8 @@
 import os
 # 指定文件夹
-folder_path = '/root/tmp'
+folder_path = '/root/tmp/111/Vuze_3.1.1.0_source'
 # 指定后缀
-suffix = '.py'
+suffix = '.java'
 # 初始化行数
 lines = 0
 # 遍历文件夹下所有文件
@@ -13,9 +13,13 @@ for root, dirs, files in os.walk(folder_path):
             # 将文件路径拼接成绝对路径
             filename = os.path.join(root, file)
             # 遍历文件并统计行数
-            for line in open(filename, encoding='utf-8'):
-                lines += 1
-print(lines)
+            try:
+                for line in open(filename, encoding='utf-8'):
+                    lines += 1
+            except:
+                continue
+
+print(f"Total lines:{lines}")
 
 # 或者
 # from glob import glob
