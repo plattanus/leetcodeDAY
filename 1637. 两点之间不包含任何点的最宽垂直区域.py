@@ -12,3 +12,4 @@ if __name__  == '__main__':
     points = [[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]
     rtn = Solution().maxWidthOfVerticalArea(points)
     print(rtn)
+    
